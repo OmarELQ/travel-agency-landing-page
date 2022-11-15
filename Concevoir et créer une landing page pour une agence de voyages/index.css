@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 90%;
+  margin: auto;
+}
+main {
+  height: 100%;
+}
+
+.logo {
+  height: 85px;
+  width: 85px;
+  object-fit: cover;
+  flex: 1;
+  margin: 5px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+  list-style: none;
+  height: 100%;
+}
+nav ul a {
+  text-decoration: none;
+  color: rgb(87, 85, 85);
+  font-size: 20px;
+  margin: 3rem;
+}
+nav ul a:hover {
+  color: rgb(0, 98, 255);
+  transform: scale(1.2);
+}
+
+/*===============================
+=======section 1 ================
+=================================*/
+.sec1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  color: #fff;
+}
+.bg {
+  background: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+h1 {
+  font-size: 90px;
+  margin-top: 10rem;
+  flex: 1;
+}
+.sec1 p {
+  font-size: 30px;
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+}
+.btn {
+  flex: 1;
+}
+.sec1 button {
+  font-size: 24px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sec1 button:hover {
+  background-color: rgb(89, 141, 220);
+  color: #fff;
+}
+/*============
+====hick=======
+==============*/
+
+.gallery {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery-content,
+.hick1,
+.hick2 {
+  flex: 1;
+  width: 28%;
+}
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20PX;
+}
+.gallery-content h3 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+  color: rgb(80, 80, 80);
+}
+.gallery-content p {
+  width: 100%;
+  font-size: 24px;
+  padding-right: 1cm;
+   color: rgb(153, 153, 153);
+}
+.hick1 img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
+.hick2 img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
+/*============
+==== customers  =======
+==============*/
+.customers {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  text-align: center;
+}
+.customers h4 {
+  font-size: 4rem;
+  margin-top: 120px;
+}
+.customers h5 {
+  font-size: 28px;
+  color: rgb(80, 80, 80);
+  margin-top: 20px;
+}
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+  width: 300px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  padding: 40px;
+}
+.card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.card p {
+  font-size: 24px;
+  line-height: 25px;
+  color: rgb(153, 153, 153);
+}
+/*============
+==== customer=======
+==============*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  margin-top: 5rem;
+  background-color: rgb(196, 196, 196);
+}
+.contact h3 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+form {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+}
+input,
+textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1rem;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  margin-top: 1rem;
+  background-color: rgb(196, 196, 196);
+}
+form button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 2rem;
+}
+form button:hover {
+  background: black;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 10vh;
+}
+footer h3 {
+  font-size: 2rem;
+  color: rgb(143, 143, 143);
+}
+@media only screen and (max-width: 1221px) {
+  .logo {
+    height: 90px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 681px) {
+  .sec1 h1 {
+    font-size: 3rem;
+  }
+  nav {
+    display: block;
+  }
+  header {
+    height: 20vh;
+    text-align: center;
+    background-color: rgb(90, 87, 87);
+    
+  }
+  .gallery-content {
+    text-align: center;
+  }
+  .customers h4 {
+    font-size: 2rem;
+  }
+  form {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .contact h3 {
+    font-size: 2rem;
+  }
+  nav a {
+    margin: 0;
+  }
+  nav ul a {
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 1016px) {
+  ul a {
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .sec1 p {
+    font-size: 16px;
+  }
+
+  .gallery-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .gallery {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .hick1,
+  .hick2 {
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .logo {
+    flex: 1;
+  }
+  nav ul {
+    flex: 3;
+    justify-content: center;
+  }
+}
